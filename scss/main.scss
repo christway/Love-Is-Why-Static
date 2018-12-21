@@ -1,0 +1,246 @@
+// Colors
+$color-main: #01B5D0;
+$color-secondary: #666666;
+
+// Fonts
+$font-main: 'Lato', sans-serif;
+$font-color: #23231A;
+
+// Selectors
+body {
+  font-family: $font-main;
+  color: $font-color;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 300;
+  padding: 50px 0;
+}
+
+p {
+  margin-top: 16px; 
+  font-weight: 300;
+  line-height: 24px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+// LOVE IS WHY header image
+#front-header {
+  background-color: $color-main;
+
+  img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+// Story cards
+#featuredStories {
+  background-color: $color-main;
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+  .card {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    article {
+      display: none;
+    }
+
+    p {
+      margin-top: 0px;
+      max-height: 170px;
+      height: 170px;
+      overflow: hidden;
+    }
+
+    a.button {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .col {
+    flex-basis: auto;
+  }
+}
+
+// Share Your Story section
+#block-shareyourstory {
+  margin-bottom: 63px;
+
+  h1 {
+    padding-bottom: 0px;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+// Full Featured Story overlay
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0,0,0,.50);
+
+  article {
+    position: relative;
+    padding: 30px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 9999;
+    height: 100vh;
+    overflow-y: auto;
+
+    p {
+      margin-top: 0;
+    }
+
+    .close-story {
+      font-weight: normal;
+      color: $color-main;
+      cursor: pointer;
+    }
+  }
+}
+
+// Front page main container
+.main-container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+// Main text dividers
+.divider {
+  height: 16px;
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    top: -29px;
+    display: inline-block;
+    background-color: white;
+    
+    li {
+      display: inline-block;
+      border-radius: 100%;
+      width: 10px;
+      height: 10px;
+      border: solid 1px #CCC;
+
+      &:nth-of-type(2) {
+        margin: 0 8px;
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $color-secondary;
+  padding: 50px 0;
+
+  p {
+    color: white;
+    margin: 0;
+  }
+
+  b,a {
+    color: $color-main;
+  }
+
+  .icon-bg {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+    background-color: $color-main;
+  }
+
+  .col-sm-12 {
+    margin-bottom: 15px;
+  }
+}
+
+a.button {
+  padding: 13px;
+  margin-top: 30px;
+  color: white !important;
+  background-color: $color-main;
+  border-radius: 5px;
+  border: solid 2px $color-main;
+  cursor: pointer;
+}
+
+a.button:hover {
+  background-color: white;
+  color: $color-main !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// Media Queries
+@media (min-width: 992px) {
+  .main-container {
+      width: 970px;
+  }
+}
+
+@media (min-width: 798px) {
+  .main-container {
+      width: 750px;
+  }
+}
+
+@media (max-width: 798px) {
+  video {
+    margin: 50px 0;
+  }
+
+  .main-container {
+      width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #featuredStories .card p {
+    max-height: 100%;
+    height: auto;
+  }
+}
