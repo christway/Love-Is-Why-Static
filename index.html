@@ -21,14 +21,8 @@
     </header>
 
     <main role="main" class="main-container">
-      <div id="block-liw-content">
-        <video controls="controls">
-          <source src="assets/Love%20is%20Why%20EX%2016x9.mp4" type="video/mp4">
-        </video>
-      </div>
-
       <article>
-        <div class="divider">
+        <div class="divider" style="margin-top: 100px;">
           <hr />
           <ul>
             <li></li>
@@ -50,6 +44,12 @@
             <li></li>
           </ul>
         </div>
+
+        <div id="block-liw-content">
+          <video controls="controls">
+            <source src="assets/Love%20is%20Why%20EX%2016x9.mp4" type="video/mp4">
+          </video>
+        </div>
         
         <h1 class="text-center">LOVE IS WHY Stories</h1>
       </article>
@@ -64,9 +64,9 @@
     </main>
 
     <section id="featuredStories" class="container-fluid">
-      <div id="views-bootstrap-front-page-featured-stories-block-1" class="grid views-view-grid horizontal">
-        <div class="row">
-          <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+      <div id="carouselExample" class="carousel" data-ride="carousel" data-interval="0">
+        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+          <div class="carousel-item col-md-3 active">
             <div class="card">
               <p>Panama City is our home away from home for the past 26 years (vacation every year there). So, I thought how I can show them the love all the way from Harrison, TN without going down there? I’m on all the social media pages for PCB</p>
               <a class="button story-read-more">Read More</a>
@@ -76,8 +76,8 @@
               </article>
             </div>
           </div>
-
-          <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+  
+          <div class="carousel-item col-md-3">
             <div class="card">
               <p>I'm an avid blood donor but, in the last 2 years, I wasn't able to donate due to pregnancy and nursing our son.  Now that he's older I really hadn't put much thought into going to do it...until I received a phone call Blood Assurance.</p>
               <a class="button story-read-more">Read More</a>
@@ -87,8 +87,8 @@
               </article>
             </div>
           </div>
-                  
-          <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+                    
+          <div class="carousel-item col-md-3">
             <div class="card">
               <p>This past week I had to tell one of my patients and his wife that he has metastatic cancer. After sharing the news, in conversation I asked if he and his family were in church and knew Jesus. He replied with “no, but I’ve been thinking about</p>
               <a class="button story-read-more">Read More</a>
@@ -98,7 +98,36 @@
               </article>
             </div>
           </div>
+  
+          <div class="carousel-item col-md-3">
+            <div class="card">
+              <p>Last night, I was in the drive through at Starbucks in Cleveland. I was with two of my friends, and, when we got to the window to pay for our order, he handed us this card and told us the car in front of us paid for our drinks.</p>
+              <a class="button story-read-more">Read More</a>
+              <article>
+                <p>Last night, I was in the drive through at Starbucks in Cleveland. I was with two of my friends, and, when we got to the window to pay for our order, he handed us this card and told us the car in front of us paid for our drinks. We were all three amazed and so appreciative of the generosity this person showed.</p> 
+                <p>It was a little touch from heaven because what this person doesn't know is that I have struggled with depression and PTSD this past year and have been in a pretty dark place again recently. I've needed God to show me that He is working even when it feels like my world around me is crashing. So, thank you for being the hands and feet of Christ and listening to a prompting to pay for our drinks tonight because you paid for so much more than that!</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-item col-md-3">
+            <div class="card">
+              <p>Today, we were surprised by our whole meal being paid for at Texas Roadhouse! We all know it is very expensive, and on the bill it said “love is why.”</p>
+              <a class="button story-read-more">Read More</a>
+              <article>
+                <p>Today, we were surprised by our whole meal being paid for at Texas Roadhouse! We all know it is very expensive, and on the bill it said “love is why.” Also a random stranger gave my little brother $10 for his birthday present. It made my family very happy that there is still hope in this world!</p>
+              </article>
+            </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left fa-lg"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <i class="fa fa-chevron-right fa-lg"></i>
+            <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
 
@@ -131,6 +160,9 @@
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </body>
